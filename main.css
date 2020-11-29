@@ -1,0 +1,64 @@
+body{
+	background-color: lightpink;
+	font-size: 22px;
+	font-weight: 500;
+}
+*,*::before, *::after{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+}
+body{
+
+	display: grid;
+	grid-template-areas: 
+	"fejlec"
+	"tartalom" 
+	"lablec";
+	grid-template-rows: max-content 1fr max-content;	
+}
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+	text-align: left;
+	font-size: 30px;
+}
+h1{
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 55px;
+}
+p{
+	color: #FFFFFF;
+}	
+header{
+	grid-area: fejlec;
+	text-align: left;
+	font-size: 30px;
+	color: #FFFFFF;
+	padding: 55px;
+}
+main{
+	grid-area: tartalom;
+}
+footer{
+ grid-area: lablec;
+}
+.kep_kartyak .kep{
+	height: 15rem;
+	background-color: rgb(240,240,240); 
+	text-align: center;
+}
+.kep_kartyak .kep{
+	 height: 11rem;
+	 text-align: center;
+}
+.kep_kartyak .kep img{
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
